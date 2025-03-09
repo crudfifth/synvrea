@@ -15,7 +15,26 @@
     </nav>
   </div>
   <div class="header-main">
-    <div class="header-main-card"></div>
+    <div class="hero-title">
+      <div class="hero-title-wrapper">
+        <div class="hero-title-slash"></div>
+        <div class="hero-title-sides">
+          <div class="hero-title-side"></div>
+          <div class="hero-title-side"></div>
+          <div class="hero-title-side"></div>
+          <div class="hero-title-side"></div>
+        </div>
+        <div class="hero-title-text">
+          <div class="hero-title-text--backing">SynVRea</div>
+          <div class="hero-title-text--left">
+            <div class="hero-title-text-inner">SynVRea</div>
+          </div>
+          <div class="hero-title-text--right">
+            <div class="hero-title-text-inner">SynVRea</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="header-bottom">
     <div class="bbs">
@@ -49,7 +68,7 @@
   <div class="header-side">
     <div class="side-nav">
       <button class="side-nav-menu"><i class="fa-solid fa-bars"></i></button>
-      <ul class="side-nav-ul">
+      <ul class="side-nav-ul social-icons">
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-tags"></i></a></li>
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-calendar-days"></i></a></li>

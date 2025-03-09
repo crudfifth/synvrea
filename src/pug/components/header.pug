@@ -49,8 +49,22 @@ header.header
         each link in config.navLinks
           li.nav-li: a.nav-link(href=link.href) #{link.text}
 
+
   .header-main
-    div.header-main-card
+    .hero-title
+      .hero-title-wrapper
+        .hero-title-slash
+        .hero-title-sides
+          .hero-title-side
+          .hero-title-side
+          .hero-title-side
+          .hero-title-side
+        .hero-title-text
+          .hero-title-text--backing=config.text
+          .hero-title-text--left
+            .hero-title-text-inner=config.text
+          .hero-title-text--right
+            .hero-title-text-inner=config.text
 
   .header-bottom
     .bbs
@@ -62,9 +76,23 @@ header.header
   .header-side
     div.side-nav
       button.side-nav-menu: i.fa-solid.fa-bars
-      ul.side-nav-ul
+      ul.side-nav-ul.social-icons
         each item in config.sideNavIcons
           li.side-nav-li: a.side-nav-link(href=item.href): i(class="fa-solid " + item.icon)
+        //- .social-container
+        //-   ul.social-icons
+        //-     li
+        //-       a(href='#')
+        //-         i.fa.fa-instagram
+        //-     li
+        //-       a(href='#')
+        //-         i.fa.fa-twitter
+        //-     li
+        //-       a(href='#')
+        //-         i.fa.fa-linkedin
+        //-     li
+        //-       a(href='#')
+        //-         i.fa.fa-codepen
 
       .scroll-down
         .scroll-down-arrow
