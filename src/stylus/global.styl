@@ -1,8 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=M+PLUS+Rounded+1c&display=swap')
 
+// 変数定義
+white = #fff
+red = #d73c4e
+yellow = #ffea00
+skyblue = #3d8fd6
+blue = #2b4a91
+orange = #f25d26
+
+// クラス定義
+// .white
+//   color: white
+
+// .red
+//   color: red
+
+// .yellow
+//   color: yellow
+
+// .skyblue
+//   color: skyblue
+
+// .blue
+//   color: blue
+
+// .orange
+//   color: orange
+:root
+  --white: #fff
+  --red: #d73c4e
+  --yellow: #ffea00
+  --skyblue: #3d8fd6
+  --blue: #2b4a91
+  --orange: #f25d26
+
 *
   letter-spacing 0.2rem
-  color #fff
+  color var(--white)
   font-size 20px
   font-family 'Dela Gothic One', 'M PLUS Rounded 1c', sans-serif
 
@@ -10,7 +44,7 @@
   width 96%
 
 .body
-  background-color #2a69a5
+  background-color var(--skyblue)
 
   .header
     position absolute
@@ -48,12 +82,12 @@
     // 下記は間隔調整したい
     .header-bottom
       padding 0.3rem 0
-      background #c62740
+      background var(--red)
       .bbs
         white-space nowrap
-        border-top 3px dashed #fff
-        border-bottom 3px dashed #fff
-        background #c62740
+        border-top 3px dashed var(--white)
+        border-bottom 3px dashed var(--white)
+        background var(--red)
         width 100%
 
         .swiper-wrapper
@@ -65,7 +99,7 @@
             width 12%
             white-space nowrap
             margin 0.4rem 0.3rem
-            border 3px solid #fff
+            border 3px solid var(--white)
             padding 0.2rem 2rem
             border-radius 4rem
             white-space nowrap
@@ -97,7 +131,7 @@
     .news-content
       .section-button
         background none
-        border 3px solid #fff
+        border 3px solid var(--white)
         border-radius 4rem
         padding 1rem 2rem
         .section-button-link
@@ -114,7 +148,7 @@
       height 50vh
 
   #news
-    background #2a69a5
+    background var(--skyblue)
   #about
     .about-content
       .about-content-text
@@ -122,8 +156,7 @@
         margin 0 auto
         font-weight bold
         font-family 'M PLUS Rounded 1c', sans-serif
-  #contact
-      background #6bff9c
+
 
 // component parts
 .side-nav
@@ -137,11 +170,11 @@
   align-items center
   width 5%
   height 100%
-  background-color #28336c
+  background-color var(--blue)
 
   .side-nav-menu
     background none
-    border 3px solid #fff
+    border 3px solid var(--white)
     width 3rem
     height 3.5rem
     border-radius 0.4rem
@@ -194,7 +227,7 @@
       display block
 
       textPath
-        fill #fff
+        fill var(--white)
         font-size 15px
         font-weight bold
         letter-spacing 3px
@@ -237,7 +270,7 @@
 	top 0
 	height 100%
 	width 51%
-	background #fff
+	background var(--white)
 @keyframes scroll-down-animation
   25%
     opacity: 1
@@ -261,7 +294,7 @@
 	margin-left -30px
 	font-family "Helvetica Neue", "Helvetica", Arial, sans-serif
 	font-size 12px
-	color #fff
+	color var(--white)
 	text-transform uppercase
 	white-space nowrap
 	opacity .25
