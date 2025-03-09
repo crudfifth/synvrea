@@ -52,7 +52,7 @@
       <ul class="side-nav-ul">
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-tags"></i></a></li>
-        <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-regular fa-calendar-days"></i></a></li>
+        <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-calendar-days"></i></a></li>
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-envelope"></i></a></li>
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-address-card"></i></a></li>
       </ul>
