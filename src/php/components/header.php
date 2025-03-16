@@ -14,53 +14,32 @@
       </ul>
     </nav>
   </div>
-  <div class="header-main">
-    <div class="hero-title">
-      <div class="hero-title-wrapper">
-        <div class="hero-title-slash"></div>
-        <div class="hero-title-sides">
-          <div class="hero-title-side"></div>
-          <div class="hero-title-side"></div>
-          <div class="hero-title-side"></div>
-          <div class="hero-title-side"></div>
-        </div>
-        <div class="hero-title-text">
-          <div class="hero-title-text--backing">SynVRea</div>
-          <div class="hero-title-text--left">
-            <div class="hero-title-text-inner">SynVRea</div>
-          </div>
-          <div class="hero-title-text--right">
-            <div class="hero-title-text-inner">SynVRea</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="header-main"></div>
   <div class="header-bottom">
     <div class="bbs">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">VRChat</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">Youtube</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">X(Twitter)</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">メディア</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">ブログ</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">Unity</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">Blender</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">VRデバイス</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">マッチング</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">メンバー募集</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">エンジニア</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">デザイナー</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">CGモデリング</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">映像制作</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">デジタル</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">AI</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">マーケティング</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">VTuber</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">DXコンサル</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">ビジネスパートナー</span></a></div>
-          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag"># </span> <span class="bbs-tag-name">ガジェット</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">VRChat</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">Youtube</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">X(Twitter)</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">メディア</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">ブログ</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">Unity</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">Blender</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">VRデバイス</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">マッチング</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">メンバー募集</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">エンジニア</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">デザイナー</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">CGモデリング</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">映像制作</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">デジタル</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">AI</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">マーケティング</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">VTuber</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">DXコンサル</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">ブラッドレイブン</span></a></div>
+          <div class="swiper-slide"><a class="bbs-link" href="#"><span class="bbs-tag" style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;"># </span> <span class="bbs-tag-name">ガジェット</span></a></div>
         </div>
       </div>
     </div>
@@ -68,7 +47,7 @@
   <div class="header-side">
     <div class="side-nav">
       <button class="side-nav-menu"><i class="fa-solid fa-bars"></i></button>
-      <ul class="side-nav-ul social-icons">
+      <ul class="side-nav-ul">
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-tags"></i></a></li>
         <li class="side-nav-li"><a class="side-nav-link" href="#"><i class="fa-solid fa-calendar-days"></i></a></li>

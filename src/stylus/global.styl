@@ -4,47 +4,42 @@
 white = #fff
 red = #d73c4e
 yellow = #ffea00
-skyblue = #3d8fd6
-blue = #2b4a91
+// skyblue = #3d8fd6
+skyblue = #005ffe
+// blue = #2b4a91
+blue = #2128bd
 orange = #f25d26
+yellow2 = #f5c454
+black = #555
 
-// クラス定義
-// .white
-//   color: white
-
-// .red
-//   color: red
-
-// .yellow
-//   color: yellow
-
-// .skyblue
-//   color: skyblue
-
-// .blue
-//   color: blue
-
-// .orange
-//   color: orange
 :root
   --white: #fff
-  --red: #d73c4e
+  // --red: #d73c4e
+  --red: #c71414
   --yellow: #ffea00
-  --skyblue: #3d8fd6
-  --blue: #2b4a91
+  --yellow2: #f5c454
+  // --skyblue: #3d8fd6
+  --skyblue: #005ffe
+  // --blue: #2b4a91
+  --blue: #2128bd
   --orange: #f25d26
-
+  --black: #555
+  --font-color-main: #fff
+  --font-color-sub: #2128bd
+  --background-color: #fff
 *
   letter-spacing 0.2rem
-  color var(--white)
+  color var(--font-color-main)
   font-size 20px
   font-family 'Dela Gothic One', 'M PLUS Rounded 1c', sans-serif
 
 .header, .main, .footer
   width 96%
 
+#news, #about, #member
+  margin-top 5rem
 .body
-  background-color var(--skyblue)
+  background-color var(--background-color)
 
   .header
     position absolute
@@ -94,13 +89,14 @@ orange = #f25d26
           display flex
           align-items center
           transition-timing-function linear
+          color var(--font-color-sub)
 
           .swiper-slide
             width 12%
             white-space nowrap
             margin 0.4rem 0.3rem
             border 3px solid var(--white)
-            padding 0.2rem 2rem
+            padding 0.1rem 2rem
             border-radius 4rem
             white-space nowrap
             .bbs-link
@@ -117,8 +113,8 @@ orange = #f25d26
                 font-family 'M PLUS Rounded 1c', sans-serif
 
   .section
-    width 100vw
-    height 100vh
+    width 100%
+    height 100%
     overflow hidden
     .section-title
       .section-main-title
@@ -128,37 +124,76 @@ orange = #f25d26
         display block
         text-align center
         font-size 1.2rem
-    .news-content
-      .section-button
-        background none
-        border 3px solid var(--white)
-        border-radius 4rem
-        padding 1rem 2rem
-        .section-button-link
-          font-size 1.5rem
+    .news-content, .member-content, .about-content
+        font-size 1.5rem
       .about-content
         .about-content-text
           font-weight bold
           font-family 'M PLUS Rounded 1c', sans-serif
-
-
+          color var(--font-color-sub)
 
   .footer
       width 100vw
-      height 50vh
+      .footer-nav
+        .footer-nav-ul
+          .footer-nav-li
+            .footer-nav-link
+              color var(--font-color-sub)
+              font-weight bold
+              font-family 'M PLUS Rounded 1c', sans-serif
+      .footer-office
+        .office-address
+          color var(--font-color-sub)
+          font-weight bold
+          font-family 'M PLUS Rounded 1c', sans-serif
+      .footer-policy-ul
+        .footer-policy-link
+          color var(--font-color-sub)
+      .footer-copyright
+        span
+          color var(--font-color-sub)
 
   #news
-    background var(--skyblue)
+    background var(--background-color)
+    color var(--font-color-sub)
+    .news-content
+      margin 4rem auto
+      .article-wrapper
+        .article
+          width 90%
+          margin 0 auto
+          display flex
+          justify-content space-between
+          .article-date
+            font-size 1rem
+            font-weight bold
+            font-family 'M PLUS Rounded 1c', sans-serif
+            color var(--font-color-sub)
+          .article-title
+            font-size 1rem
+            font-weight bold
+            font-family 'M PLUS Rounded 1c', sans-serif
+            color var(--font-color-sub)
   #about
     .about-content
       .about-content-text
         width 50%
-        margin 0 auto
+        margin 2rem auto
         font-weight bold
         font-family 'M PLUS Rounded 1c', sans-serif
 
+.section-button
+  background none
+  margin 0 auto
+  border 3px solid var(--white)
+  border-radius 4rem
+  padding 1rem 2rem
+  width auto
+  display flex
+  justify-content center
+  .section-button-link
+    font-size 0.8rem
 
-// component parts
 .side-nav
   position fixed
   top 0
@@ -189,15 +224,30 @@ orange = #f25d26
           display flex
           justify-content center
           font-size 1.5rem
+.video-container
+  width 100%
+  height 100vh
+  overflow hidden
+  position relative
+  .dark-filter
+    filter brightness(0.6) contrast(1,2)
+    width 100%
+    height auto
+    position absolute
+    top 0
+    left 0
+    object-fit cover
 
-.dark-filter
-  filter brightness(0.6) contrast(1,2)
+.footer
+  margin-top 5rem
 
-@keyframes flowing
-  0%
-    transform translateX(0%)
-  100%
-    transform translateX(-100%)
+.footer-nav
+  width 50%
+  margin 0 auto
+  .footer-nav-ul
+    display flex
+    justify-content space-around
+
 
 .cursor
   position fixed
@@ -271,6 +321,444 @@ orange = #f25d26
 	height 100%
 	width 51%
 	background var(--white)
+
+
+.scroll-down-text
+	display flex
+  align-items center
+	margin-top 75px
+	margin-left -30px
+	font-family "Helvetica Neue", "Helvetica", Arial, sans-serif
+	font-size 12px
+	color var(--white)
+	text-transform uppercase
+	white-space nowrap
+	opacity .25
+	animation pulse 2s linear alternate infinite
+
+.hero-title
+  width 100%
+  height 100%
+
+  display flex
+  align-items center
+  justify-content center
+
+.hero-title-wrapper
+  position relative
+  color white
+  font-size 2.5rem
+  text-transform uppercase
+  letter-spacing 0.25rem
+  // padding 1rem 2rem
+
+  width 40%
+  height 30%
+
+.hero-title-slash
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%) rotate(-24deg) scaleY(0)
+  transform-origin center center
+  width 0.15rem
+  height 250%
+  background white
+  z-index 4
+  animation slash 6s ease-in infinite
+
+  &:before
+    content ''
+    display block
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    width 0.75rem
+    height 120%
+    // background #232323
+    z-index -1
+
+  &:after
+    content ''
+    display block
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background white
+
+.hero-title-sides
+  position absolute
+  width 100%
+  height 100%
+  top -10%
+  left 0
+  overflow hidden
+
+  .hero-title-side
+    position absolute
+    background white
+
+  .hero-title-side:nth-child(1)
+    top 0
+    left 0
+    width 100%
+    height 0.15rem
+    transform translateX(-101%)
+    animation side-top ease 6s infinite
+
+  .hero-title-side:nth-child(2)
+    top 0
+    right 0
+    width 0.15rem
+    height 100%
+    transform translateY(-101%)
+    animation side-right ease 6s infinite
+
+  .hero-title-side:nth-child(3)
+    left 0
+    bottom 0
+    width 100%
+    height 0.15rem
+    transform translateX(101%)
+    animation side-bottom ease 6s infinite
+
+  .hero-title-side:nth-child(4)
+    top 0
+    left 0
+    width 0.15rem
+    height 100%
+    transform translateY(101%)
+    animation side-left ease 6s infinite
+
+.hero-title-text
+  position relative
+
+.hero-title-text--backing
+  opacity 1
+  font-size 5rem
+  display flex
+  justify-content center
+
+.hero-title-text--left
+  position absolute
+  top 0
+  left 0
+  width 51%
+  height 100%
+  overflow hidden
+
+  .hero-title-text-inner
+    transform translateX(100%)
+    animation text-left 6s ease-in-out infinite
+    font-size 5rem
+    position absolute
+    left 10%
+
+.hero-title-text--right
+  position absolute
+  top 0
+  right 0%
+  width 50%
+  height 100%
+  overflow hidden
+
+  .hero-title-text-inner
+    transform translateX(-200%)
+    animation text-right 6s ease-in-out infinite
+    font-size 5rem
+    position absolute
+    right -169%
+
+
+.aboute-content, .news-content, .member-content
+  width 50%
+  margin 0 auto
+  display flex
+  flex-direction column
+
+.member-card-wrapper
+  display flex
+  flex-direction row
+  gap 20px
+  justify-content space-around
+  margin 6rem 0
+  .member-card
+    display flex
+    flex-direction column
+    align-items center
+    .member-card-image-wrapper
+      width 400px
+      height 400px
+      overflow hidden
+      display flex
+      justify-content center
+      align-items center
+      border-radius 10rem
+      border 1rem solid var(--yellow)
+      z-index 5
+      .member-card-image
+        width 100%
+      .hikky
+        transform translate(-4rem, 8rem) scale(2.2)
+      .toto
+        transform translate(1rem, 0.3rem) scale(1.2)
+    .member-content-name
+      font-size 1.5rem
+      font-weight bold
+      letter-spacing 0.7rem
+      z-index 5
+      color var(--font-color-sub)
+    .member-content-role
+      font-size 0.8rem
+      font-weight bold
+      font-family 'M PLUS Rounded 1c', sans-serif
+      z-index 5
+
+.section-title-shapes
+	position relative
+	height 50vh
+	width 100vw
+	background #2128bd
+	overflow hidden
+.shape
+	will-change transform
+	position absolute
+	border-radius 50%
+	&.shape-1
+		background #005ffe
+		width 650px
+		height 650px
+		margin -325px 0 0 -325px
+	&.shape-2
+		background #ffe5e3
+		width 440px
+		height 440px
+		margin -220px 0 0 -220px
+	&.shape-3
+		background #ffcc57
+		width 270px
+		height 270px
+		margin -135px 0 0 -135px
+.section-title-header
+	top 0
+	left 0
+	position absolute
+	display flex
+	justify-content center
+	align-items center
+	height 50vh
+	width 100vw
+	background #fff
+	mix-blend-mode screen
+.section-title-header-name
+	color #000
+	margin 0
+	text-align center
+.section-title-cursor
+  position fixed
+  background #2128bd
+  width 20px
+  height 20px
+  margin -10px 0 0 -10px
+  border-radius 50%
+  will-change transform
+  user-select none
+  pointer-events none
+  z-index 10
+  mix-blend-mode screen
+  ::selection
+    color #fff
+    background #2128bd
+
+canvas
+  max-width 100%
+  display block
+  position absolute
+  top 50%
+  opacity 1
+
+.canvas-wrapper
+  position absolute
+  top 50%
+  left 0
+  width 100%
+  height 100%
+  z-index 5
+
+.section-button-wrapper
+  display flex
+  justify-content center
+  .cta
+    justify-content center
+    align-items center
+    padding 0.5rem 2.5rem 0.7rem
+    display flex
+    text-decoration none
+    font-family 'Poppins', sans-serif
+    font-size 40px
+    color var(--white)
+    background #2128bd
+    transition 1s
+    box-shadow 6px 6px 0 #555
+    transform skewX(-15deg)
+    border-radius 1rem
+    .cta-text
+      transform skewX(15deg)
+      display flex
+      align-items center
+      justify-content center
+    .cta-arrow
+      width 20px
+      margin-right 0
+      margin-left 30px
+      position relative
+      top 12%
+      transition 0.5s
+      path
+        &.one
+          transition 0.4s
+          transform translateX(-60%)
+        &.two
+          transition 0.5s
+          transform translateX(-30%)
+    &:focus
+      outline none
+    &:hover
+      transition 0.5s
+      box-shadow 10px 10px 0 var(--yellow2)
+      .cta-arrow
+        transition 0.5s
+        margin-right 45px
+      path
+        &.three
+          animation color_anim 1s infinite 0.2s
+        &.one
+          transform translateX(0%)
+          animation color_anim 1s infinite 0.6s
+        &.two
+          transform translateX(0%)
+          animation color_anim 1s infinite 0.4s
+
+
+@keyframes color_anim
+  0%
+      fill white
+  50%
+      fill var(--yellow2)
+  100%
+    fill white
+
+@keyframes slash
+  0%
+    transform translate(-50%, -50%) rotate(-24deg) scaleY(0)
+  6%
+    transform translate(-50%, -50%) rotate(-24deg) scaleY(1)
+  13%
+    transform translate(-50%, -50%) rotate(-24deg) scaleY(1)
+  16.6% // 1 second
+    transform translate(-50%, -50%) rotate(-24deg) scaleY(0)
+  100%
+    transform translate(-50%, -50%) rotate(-24deg) scaleY(0)
+
+@keyframes text-left
+  0%
+    transform translateX(100%)
+  10%
+    transform translateX(0)
+  58%
+    transform translateX(0)
+  70%
+    transform translateX(-200%)
+  100%
+    transform translateX(-200%)
+
+@keyframes text-right
+  0%
+    transform translateX(-200%)
+  10%
+    transform translateX(-100%)
+  58%
+    transform translateX(-100%)
+  70%
+    transform translateX(-300%)
+  100%
+    transform translateX(-300%)
+
+@keyframes side-top
+  0%
+  14%
+    transform translateX(-101%)
+  24%
+  55%
+    transform translateX(0)
+  65%
+    transform translateX(101%)
+  100%
+    transform translateX(101%)
+
+@keyframes side-right
+  0%
+  14%
+  23%
+    transform translateY(-101%)
+  30%
+  62%
+    transform translateY(0)
+  72%
+    transform translateY(101%)
+  100%
+    transform translateY(101%)
+
+@keyframes side-bottom
+  0%
+  14%
+  24%
+  28%
+    transform translateX(101%)
+  37%
+  70%
+    transform translateX(0)
+  79%
+    transform translateX(-101%)
+  100%
+    transform translateX(-101%)
+
+@keyframes side-left
+  0%
+  14%
+  24%
+  34%
+  35%
+    transform translateY(101%)
+  44%
+  79%
+    transform translateY(0)
+  86%
+    transform translateY(-101%)
+  100%
+    transform translateY(-101%)
+
+@keyframes rotate
+  from
+    transform translate(-50%, -50%) rotate(0deg)
+  to
+    transform translate(-50%, -50%) rotate(360deg)
+
+@keyframes pulse
+  from
+    opacity 0.3
+  to
+    opacity 1
+
+@keyframes flowing
+  0%
+    transform translateX(0%)
+  100%
+    transform translateX(-100%)
+
 @keyframes scroll-down-animation
   25%
     opacity: 1
@@ -286,255 +774,3 @@ orange = #f25d26
   100%
     opacity: 0
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5)
-
-.scroll-down-text
-	display flex
-  align-items center
-	margin-top 75px
-	margin-left -30px
-	font-family "Helvetica Neue", "Helvetica", Arial, sans-serif
-	font-size 12px
-	color var(--white)
-	text-transform uppercase
-	white-space nowrap
-	opacity .25
-	animation pulse 2s linear alternate infinite
-
-@keyframes rotate
-  from
-    transform translate(-50%, -50%) rotate(0deg)
-  to
-    transform translate(-50%, -50%) rotate(360deg)
-
-@keyframes pulse
-  from
-    opacity 0.3
-  to
-    opacity 1
-
-
-.hero-title
-  width 100%
-  height 100%
-  
-  display flex
-  align-items center
-  justify-content center
-  
-.hero-title-wrapper
-  position relative
-  color white
-  font-size 2.5rem
-  text-transform uppercase
-  letter-spacing 0.25rem
-  // padding 1rem 2rem
-
-  width 40%
-  height 30%
-  
-.hero-title-slash
-  position absolute
-  top 50%
-  left 50%
-  transform translate(-50%, -50%) rotate(-24deg) scaleY(0)
-  transform-origin center center
-  width 0.15rem
-  height 250%
-  background white
-  z-index 4
-  animation slash 6s ease-in infinite
-  
-  &:before
-    content ''
-    display block
-    position absolute
-    top 50%
-    left 50%
-    transform translate(-50%, -50%)
-    width 0.75rem
-    height 120%
-    // background #232323
-    z-index -1
-    
-  &:after
-    content ''
-    display block
-    position absolute
-    top 0
-    left 0
-    width 100%
-    height 100%
-    background white
-  
-.hero-title-sides
-  position absolute
-  width 100%
-  height 100%
-  top -10%
-  left 0
-  overflow hidden
-  
-  .hero-title-side
-    position absolute
-    background white
-  
-  .hero-title-side:nth-child(1)
-    top 0
-    left 0
-    width 100%
-    height 0.15rem
-    transform translateX(-101%)
-    animation side-top ease 6s infinite
-  
-  .hero-title-side:nth-child(2)
-    top 0
-    right 0
-    width 0.15rem
-    height 100%
-    transform translateY(-101%)
-    animation side-right ease 6s infinite
-  
-  .hero-title-side:nth-child(3)
-    left 0
-    bottom 0
-    width 100%
-    height 0.15rem
-    transform translateX(101%)
-    animation side-bottom ease 6s infinite
-  
-  .hero-title-side:nth-child(4)
-    top 0
-    left 0
-    width 0.15rem
-    height 100%
-    transform translateY(101%)
-    animation side-left ease 6s infinite
-  
-.hero-title-text
-  position relative
-  
-.hero-title-text--backing
-  opacity 1
-  font-size 5rem
-  display flex
-  justify-content center
-  
-.hero-title-text--left
-  position absolute
-  top 0
-  left 0
-  width 51%
-  height 100%
-  overflow hidden
-  
-  .hero-title-text-inner
-    transform translateX(100%)
-    animation text-left 6s ease-in-out infinite
-    font-size 5rem
-    position absolute
-    left 10%
-  
-.hero-title-text--right
-  position absolute
-  top 0
-  right 0%
-  width 50%
-  height 100%
-  overflow hidden
-  
-  .hero-title-text-inner
-    transform translateX(-200%)
-    animation text-right 6s ease-in-out infinite
-    font-size 5rem
-    position absolute
-    right -169%
-    
-@keyframes slash
-  0%
-    transform translate(-50%, -50%) rotate(-24deg) scaleY(0)
-  6%
-    transform translate(-50%, -50%) rotate(-24deg) scaleY(1)
-  13%
-    transform translate(-50%, -50%) rotate(-24deg) scaleY(1)
-  16.6% // 1 second
-    transform translate(-50%, -50%) rotate(-24deg) scaleY(0)
-  100%
-    transform translate(-50%, -50%) rotate(-24deg) scaleY(0)
-    
-@keyframes text-left
-  0%
-    transform translateX(100%)
-  10%
-    transform translateX(0)
-  58%
-    transform translateX(0)
-  70%
-    transform translateX(-200%)
-  100%
-    transform translateX(-200%)
-    
-@keyframes text-right
-  0%
-    transform translateX(-200%)
-  10%
-    transform translateX(-100%)
-  58%
-    transform translateX(-100%)
-  70%
-    transform translateX(-300%)
-  100%
-    transform translateX(-300%)
-    
-@keyframes side-top
-  0%
-  14%
-    transform translateX(-101%)
-  24%
-  55%
-    transform translateX(0)
-  65%
-    transform translateX(101%)
-  100%
-    transform translateX(101%)
-    
-@keyframes side-right
-  0%
-  14%
-  23%
-    transform translateY(-101%)
-  30%
-  62%
-    transform translateY(0)
-  72%
-    transform translateY(101%)
-  100%
-    transform translateY(101%)
-    
-@keyframes side-bottom
-  0%
-  14%
-  24%
-  28%
-    transform translateX(101%)
-  37%
-  70%
-    transform translateX(0)
-  79%
-    transform translateX(-101%)
-  100%
-    transform translateX(-101%)
-    
-@keyframes side-left
-  0%
-  14%
-  24%
-  34%
-  35%
-    transform translateY(101%)
-  44%
-  79%
-    transform translateY(0)
-  86%
-    transform translateY(-101%)
-  100%
-    transform translateY(-101%)

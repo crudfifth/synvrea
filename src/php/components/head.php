@@ -10,6 +10,7 @@
   <!-- CSS-->
   <link rel="stylesheet" href="./src/css/reset.css"/>
   <link rel="stylesheet" href="./src/css/global.css"/>
+  <link rel="stylesheet" href="./src/css/mobile.css" media="only screen and (max-width: 768px)"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <!-- FontAwesome-->
   <script src="https://kit.fontawesome.com/421841d6a1.js" crossorigin="anonymous"></script>

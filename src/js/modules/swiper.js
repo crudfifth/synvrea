@@ -10,4 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     allowTouchMove: false,
   });
+
+  const swiperContainer = document.querySelector('.swiper-container');
+
+  swiperContainer.addEventListener('mouseenter', () => {
+    swiper.autoplay.stop();
+    swiper.slideTo(swiper.activeIndex, 0, false);
+  });
+
+  swiperContainer.addEventListener('mouseleave', () => {
+    swiper.autoplay.start();
+  });
 });
