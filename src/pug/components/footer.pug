@@ -1,2 +1,33 @@
-footer.footer
-  span FOOTER
+-
+  const config = {
+    navLinks: [
+      { text: 'Instagram', href: '#' },
+      { text: 'X', href: '#' },
+      { text: 'YouTube', href: '#' },
+      { text: 'メンバー募集', href: '#' },
+      { text: 'お問い合わせ', href: '#' }
+    ],
+    policyLinks: [
+      { text: 'プライバシーポリシー', href: '#' },
+      { text: '情報セキュリティ方針', href: '#' }
+    ],
+    officeAddress: '〒106-0032 東京都港区六本木7-17-12-513'
+  }
+
+footer.footer(style="font-family: sans-serif;")
+  nav.footer-nav
+    ul.footer-nav-ul
+      each link in config.navLinks
+        li.footer-nav-li: a.footer-nav-link(href=link.href style="font-size: 0.6rem; font-family: sans-serif; font-weight: bold;") #{link.text}
+
+  .footer-office(style="text-align: center; margin-top: 10px;")
+    span.office-address(style="font-size: 0.7rem; font-family: sans-serif; font-weight: normal;") #{config.officeAddress}
+
+  .footer-policy(style="text-align: center; margin-top: 5px;")
+    ul.footer-policy-ul
+      each policy in config.policyLinks
+        li.footer-policy-li(style="display: inline; margin-right: 10px;")
+          a.footer-policy-link(href=policy.href style="font-size: 0.6rem; font-family: sans-serif; font-weight: bold; text-decoration: underline;") #{policy.text}
+
+  .footer-copyright(style="text-align: center;")
+    span(style="font-size: 0.6rem; font-family: sans-serif;") &copy; #{new Date().getFullYear()} SynVRea. All Rights Reserved.

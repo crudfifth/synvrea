@@ -21,7 +21,7 @@
       'マーケティング',
       'VTuber',
       'DXコンサル',
-      'ビジネスパートナー',
+      'ブラッドレイブン',
       'ガジェット'
     ],
     navLinks: [
@@ -49,15 +49,15 @@ header.header
         each link in config.navLinks
           li.nav-li: a.nav-link(href=link.href) #{link.text}
 
+
   .header-main
-    div.header-main-card
 
   .header-bottom
     .bbs
       .swiper-container
         .swiper-wrapper
           each tag in config.bbsTags
-            .swiper-slide: a.bbs-link(href="#") #[span.bbs-tag # ] #[span.bbs-tag-name= tag]
+            .swiper-slide: a.bbs-link(href="#") #[span.bbs-tag(style="color:rgba(117, 31, 31, 0.62);font-size: 1rem;") # ] #[span.bbs-tag-name= tag]
 
   .header-side
     div.side-nav

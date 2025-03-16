@@ -1,0 +1,202 @@
+.news-content,
+.about-content,
+.member-content {
+  width: 100%;
+}
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+}
+.footer {
+  height: 25vh;
+  margin: 2rem 0;
+}
+.footer-nav {
+  margin-bottom: 2rem;
+}
+.section-button {
+  width: auto;
+  padding: 0.4rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem auto 0;
+}
+.section-button .section-button-link {
+  font-size: 0.8rem;
+}
+.body .cursor {
+  display: none;
+}
+.body .header {
+  position: relative;
+  width: 100%;
+  height: 6vh;
+}
+.body .header .header-top {
+  display: none;
+}
+.body .header .header-main {
+  display: none;
+}
+.body .header .header-side .side-nav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 6vh;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.body .header .header-side .side-nav .side-nav-menu {
+  width: 2rem;
+  height: 1.7rem;
+  margin: 0.5rem;
+  padding-left: 0.15rem;
+}
+.body .header .header-side .side-nav .side-nav-menu i {
+  font-size: 1rem;
+}
+.body .header .header-side .side-nav .side-nav-ul {
+  display: none;
+}
+.body .header .header-side .side-nav .scroll-down {
+  display: none;
+}
+.body .header .header-bottom {
+  display: none;
+}
+.body .main {
+  width: 100%;
+}
+.body .main .section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.body .main .section .section-title .section-main-title {
+  font-size: 2rem;
+}
+.body .main .section .section-title .section-sub-title {
+  font-size: 0.7rem;
+}
+.body .main #hero .dark-filter {
+  width: 100%;
+}
+.body .main #news {
+  margin-top: 3rem;
+}
+.body .main #news .news-content {
+  width: 100%;
+}
+.body .main #news .news-content .section-button {
+  width: auto;
+  padding: 0.4rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem auto 0;
+}
+.body .main #news .news-content .section-button .section-button-link {
+  font-size: 0.8rem;
+}
+.body .main #news .news-content .article-wrapper .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.body .main #news .news-content .article-wrapper .article .article-date {
+  font-size: 0.6rem;
+}
+.body .main #news .news-content .article-wrapper .article .article-title {
+  font-size: 0.6rem;
+}
+.body .main #about {
+  margin-top: 3rem;
+}
+.body .main #about .about-content {
+  width: 100%;
+}
+.body .main #about .about-content .about-content-text {
+  width: 90%;
+  font-size: 0.7rem;
+  margin: 2rem auto 0;
+}
+.body .main #about .about-content .section-button {
+  width: auto;
+  padding: 0.4rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem auto;
+}
+.body .main #about .about-content .section-button .section-button-link {
+  font-size: 0.8rem;
+}
+.body .main #member {
+  margin-top: 3rem;
+}
+.body .main #member .member-content {
+  width: 100%;
+}
+.body .main #member .member-content .section-button {
+  width: auto;
+  padding: 0.4rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem auto 0;
+}
+.body .main #member .member-content .section-button .section-button-link {
+  font-size: 0.8rem;
+}
+.body .main #member .member-content .member-card-wrapper {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+.body .main #member .member-content .member-card-wrapper .member-card {
+  width: 100%;
+  height: 12rem;
+}
+.body .main #member .member-content .member-card-wrapper .member-card .member-card-image-wrapper {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+.body .main #member .member-content .member-card-wrapper .member-card .member-content-name {
+  position: relative;
+  top: -1rem;
+  font-size: 0.8rem;
+}
+.body .main #member .member-content .member-card-wrapper .member-card .member-content-role {
+  position: relative;
+  top: -0.5rem;
+  font-size: 0.5rem;
+}
+.video-container {
+  height: 30vh;
+}
